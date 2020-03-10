@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svg_ilustacio_formes basiques</title>
+    <style type="text/css">
+        *¨{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: beige;
+        }
+        svg{
+            background-color: aquamarine;
+            
+            }
+        .escala {
+                stroke: red;
+                stroke-width:10;
+        }
+        
+        g:hover .escala {
+                stroke-width:20;
+                transition: 1s stroke-width;
+        }
+        circle:hover{
+            transform: scale(2);
+            transition: 0.5s transform;
+        }
+    </style>
+</head>
+<body>
+       <svg width="800" height="400">
+           <circle cx="100" cy="100" r="40" fill="yellow"/>
+           <ellipse cx="400" cy="340" rx="80" ry=" 20" fill="black"/>
+        <g>
+        <line class="escala" x1="360" y1="300" x2="428" y2="300"/>
+        <line class="escala" x1="360" y1="260" x2="440" y2="260"/>    
+        <line class="escala" x1="360" y1="220" x2="450" y2="220"/>
+        <line class="escala" x1="360" y1="180" x2="450" y2="180"/>
+        <line class="escala" x1="360" y1="140" x2="460" y2="140"/>
+        <line class="escala" x1="360" y1="100" x2="465" y2="100"/>
+        <line class="escala" x1="360" y1="60" x2="470" y2="60"/>
+        <line class="escala" x1="360" y1="20" x2="480" y2="20"/>
+           
+           <rect class x="360" y="0" width="10" height="340" fill="red"/>
+           <polygon points="480,0 490,0 430,340 420,340" fill="red"/>
+         </g>
+                  
+       </svg>
+</body>
+</html>
